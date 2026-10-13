@@ -1,0 +1,21 @@
+# basic.rviz —— 【基础版 任务 4】骨架，尚未实现（占位，仅保证是合法 YAML）
+#
+# 要求：
+#   * Fixed Frame 设为 odom
+#   * 添加 TF、LaserScan、Image 三个显示项
+#   * 话题按 `ros2 topic list -t` 的实际输出选择
+#   * 每项都要检查 Status，出现 Warning / Error 时记录排查过程
+#
+# 正式文件应当在 RViz 实际运行后，用 File -> Save Config 覆盖本文件生成，
+# 这样 Window Geometry / QMainWindow State 等字段才完整。
+Panels: []
+Visualization Manager:
+  Class: ""
+  Displays: []
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: odom
+    Frame Rate: 30
+  Name: root
+  Tools: []
+  Value: true

@@ -1,0 +1,21 @@
+# ROS 2 编译产物
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# rosbag 数据包（体积大，按任务书单独提交）
+bags/
+*.bag
+*.db3
+*.mcap
+metadata.yaml
+
+# 编辑器 / 临时文件
+.vscode/
+.idea/
+*.log

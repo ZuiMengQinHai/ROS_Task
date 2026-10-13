@@ -1,0 +1,43 @@
+# tb3_tools 参数（骨架：参数名先定下来，具体实现在节点里读取）
+# 用法示例：ros2 launch tb3_tools integrated.launch.py window_sec:=3.0
+
+/**:
+  ros__parameters:
+    use_sim_time: true
+
+image_monitor:
+  ros__parameters:
+    # 帧率统计窗口长度（进阶版要求：可由 Launch 参数覆盖）
+    window_sec: 5.0
+    # 数值话题的发布周期
+    publish_period_sec: 1.0
+    # 供 rqt Plot 绘图的输出话题名
+    fps_topic: /image_monitor/fps
+
+static_tf_broadcaster:
+  ros__parameters:
+    parent_frame: base_link
+    child_frame: inspection_point
+    x: 0.15
+    y: 0.0
+    z: 0.20
+    roll: 0.0
+    pitch: 0.0
+    yaw: 0.0
+
+dynamic_tf_broadcaster:
+  ros__parameters:
+    parent_frame: odom
+    child_frame: moving_target
+    # 目标绕 odom 原点做圆周运动的周期与半径
+    period_sec: 8.0
+    radius_m: 1.2
+    z_m: 0.3
+
+tf_listener:
+  ros__parameters:
+    source_frame: base_link
+    target_frame: moving_target
+    # lookup_transform 的超时；超时/坐标系缺失时要走异常分支
+    timeout_sec: 0.2
+    distance_topic: /tf_listener/distance

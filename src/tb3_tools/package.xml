@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<!--
+  第 3 章三级项目：TurtleBot3 仿真小车工具链
+  统一环境：Ubuntu 24.04 + ROS 2 Jazzy + Gazebo Sim (Harmonic)
+  统一模型：turtlebot3_gazebo 的 TurtleBot3 Waffle Pi
+-->
+<package format="3">
+  <name>tb3_tools</name>
+  <version>0.1.0</version>
+  <description>第3章三级项目：TurtleBot3 Waffle Pi 仿真工具链（Launch / tf / Gazebo / RViz / rosbag / rqt）</description>
+  <maintainer email="ubuntu@ubuntu-ros2.local">ubuntu</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- 运行时（Python 节点） -->
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_geometry_msgs</depend>
+
+  <!-- Launch 基础设施 -->
+  <depend>launch</depend>
+  <depend>launch_ros</depend>
+  <depend>ament_index_python</depend>
+
+  <!-- 仿真与可视化（只运行期依赖，不需要编译） -->
+  <exec_depend>ros_gz_sim</exec_depend>
+  <exec_depend>ros_gz_bridge</exec_depend>
+  <exec_depend>turtlebot3</exec_depend>
+  <exec_depend>turtlebot3_gazebo</exec_depend>
+  <exec_depend>turtlebot3_teleop</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>rqt_graph</exec_depend>
+  <exec_depend>rqt_image_view</exec_depend>
+  <exec_depend>rqt_plot</exec_depend>
+  <exec_depend>rqt_console</exec_depend>
+  <exec_depend>tf2_tools</exec_depend>
+  <exec_depend>rosbag2</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
