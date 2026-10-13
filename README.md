@@ -23,9 +23,11 @@
 ## 二、目录结构
 
 ```
-task1/
+ROS_Task/                        仓库根（本机 D:\pyproject\ROS_Task）
 ├── README.md                    本文件
-├── 03_第3章_ROS2常用工具_三级项目任务书.md   任务书原文
+├── AI_协作记录.md               任务书要求的 AI 协作记录
+├── .gitignore
+├── .gitattributes               强制 LF 换行（源码要上传到 Linux 编译）
 ├── src/
 │   └── tb3_tools/               本项目功能包（ament_python）
 │       ├── package.xml
@@ -42,9 +44,11 @@ task1/
 │       │   └── bringup.launch.py     挑战版入口（含故障切换 / 离线回放）
 │       ├── rviz/basic.rviz       RViz 配置（Fixed Frame: odom）
 │       └── config/params.yaml    参数默认值
-├── docs/                        证据材料（截图、坐标系树、bag info、故障分析报告）
-└── scripts/                     驱动虚拟机做前置/验证的运维脚本
+└── docs/                        证据材料（截图、坐标系树、bag info、故障分析报告）
 ```
+
+> 客户机 `~/task1_ws` 是**编译与运行环境**（`src/tb3_tools` 由本仓库上传），
+> 不放 git 仓库；版本管理统一在本机的 `ROS_Task` 仓库进行。
 
 ## 三、构建与启动
 
@@ -75,9 +79,12 @@ ros2 launch tb3_tools basic.launch.py
 - [x] 建立功能包骨架 `tb3_tools`（元数据、目录结构、节点与 Launch 占位文件、参数默认值）
 - [x] 骨架编译通过，确认工具链可用
 
-**git 仓库：尚未建立。** 起初在客户机 `~/task1_ws` 建过一次并提交了骨架，
-经确认该位置不可用，已整体删除（`rm -rf ~/task1_ws/.git`），工作空间与功能包文件全部保留。
-任务书要求 git 提交记录，仓库位置待指定后再建。
+**git 仓库**
+
+- 本机工作副本：`D:\pyproject\ROS_Task`
+- 远端：`https://github.com/ZuiMengQinHai/ROS_Task.git`（分支 `main`）
+- 客户机 `~/task1_ws` 只作编译/运行环境，不放仓库
+  （早前在客户机里建过一次仓库，经确认位置不可用，已整体删除）
 
 待完成（任务本体，尚未执行）：
 
