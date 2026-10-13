@@ -52,6 +52,9 @@ ROS_Task/                        仓库根（本机 D:\pyproject\ROS_Task）
 
 ## 三、构建与启动
 
+> **运行/观察/录制/提交这些操作步骤，见 [`docs/操作手册.md`](docs/操作手册.md)** ——
+> 那份文档是给自己动手时照着敲的清单。
+
 ```bash
 # 每次新终端
 source /opt/ros/jazzy/setup.bash
@@ -88,7 +91,8 @@ ros2 launch tb3_tools basic.launch.py
 
 待完成（任务本体，尚未执行）：
 
-- [ ] 基础版 1：实现 `basic.launch.py`（包含仿真 + 启动 RViz + `use_sim_time` + 加载 `basic.rviz`）
+- [x] **基础版 1：实现 `basic.launch.py`**（包含仿真 + 启动 RViz + `use_sim_time` + 加载 `basic.rviz`，
+      不写死绝对路径）—— 代码已完成并在客户机验证启动成功
 - [ ] 基础版 2：键盘操控小车，用 `topic list -t` / `hz` 核实 `/camera/image_raw`、`/odom` 有数据
 - [ ] 基础版 3：`view_frames` 导出坐标系树；`tf2_echo` 查询两组关系并解释动静之分
 - [ ] 基础版 4：RViz 里配好 TF / LaserScan / Image（Fixed Frame = `odom`），逐项检查 Status
