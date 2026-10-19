@@ -228,4 +228,10 @@ ros2 launch tb3_tools bringup.launch.py mode:=offline fault_mode:=frame
 ```
 
 分支：`challenge/fault-injection`（故障注入与修复），已用 `--no-ff` 合并回 `main`。
-远端推送需要凭据，本机暂未执行 `git push`（命令见 `docs/操作手册_进阶与挑战.md` 第 7、12 节）。
+
+远端仓库：<https://github.com/ZuiMengQinHai/ROS_Task.git>，已推送
+
+- `main` —— 含合并提交 `983a5d9`、README 收尾提交
+- `challenge/fault-injection` —— 独立分支（`7394dd6`），可直接开 PR 查看故障注入与修复的提交历史
+
+> 数据包 `bags/final`（159 MB）按任务书要求**不进 git**，单独提交/作为课程平台附件。
