@@ -1,0 +1,63 @@
+### ros2 node list
+/image_monitor
+/rosbag2_player
+/rqt_graph
+/rqt_plot
+/rviz2
+/tf_listener
+/transform_listener_impl_622af0120da0
+
+### 相关话题
+/camera/image_missing [sensor_msgs/msg/Image]
+/camera/image_raw [sensor_msgs/msg/Image]
+/image_monitor/fps [std_msgs/msg/Float64]
+/tf [tf2_msgs/msg/TFMessage]
+/tf_listener/distance [std_msgs/msg/Float64]
+/tf_static [tf2_msgs/msg/TFMessage]
+
+### /camera/image_raw 的发布者与订阅者
+Publisher count: 1
+Node name: rosbag2_player
+Node namespace: /
+Endpoint type: PUBLISHER
+  Reliability: RELIABLE
+Subscription count: 1
+Node name: rviz2
+Node namespace: /
+Endpoint type: SUBSCRIPTION
+  Reliability: RELIABLE
+
+### /camera/image_missing 的发布者与订阅者
+Publisher count: 0
+Subscription count: 1
+Node name: image_monitor
+Node namespace: /
+Endpoint type: SUBSCRIPTION
+
+### 参数
+Double value is: 5.0
+String value is: moving_target
+
+### /image_monitor/fps（8s 采样）
+data: 0.0
+---
+data: 0.0
+---
+
+### /tf_listener/distance（8s 采样）
+data: 1.234544443486981
+---
+data: 1.234544443486981
+---
+data: 1.234400552188799
+---
+data: 1.2345444436893367
+---
+data: 1.2345444436893367
+---
+data: 1.2345444439020319
+---
+data: 1.2345444439020319
+---
+data: 1.2345444439020319
+---
