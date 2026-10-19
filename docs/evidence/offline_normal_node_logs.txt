@@ -1,0 +1,71 @@
+[INFO] [image_monitor-1]: process started with pid [3974]
+[INFO] [tf_listener-2]: process started with pid [3975]
+[image_monitor-1] [INFO] [1792375530.630761561] [image_monitor]: image_monitor 启动：统计窗口 window_sec=5.0s，发布周期 1.0s，输出话题 /image_monitor/fps（std_msgs/Float64）
+[image_monitor-1] [INFO] [1792375530.635186626] [image_monitor]: 输入是相对话题名 image，由 Launch remap 决定实际话题；可用 ros2 topic info 或 rqt Node Graph 确认
+[tf_listener-2] [INFO] [1792375530.802738887] [tf_listener]: tf_listener 启动：查询 moving_target 在 base_link 中的位置，查询周期 0.20s，超时 0.20s，距离发布到 /tf_listener/distance（std_msgs/Float64）
+[image_monitor-1] [WARN] [1792375549.023869100] [image_monitor]: 已 3.0s 以上没有收到图像消息，帧率按 0 发布。排查顺序：ros2 topic list -t 看图像话题是否存在 → ros2 topic hz <话题> 看有没有数据 → rqt Node Graph 看 remap 后的连接是否落到别的话题
+[tf_listener-2] [WARN] [1792375549.230689019] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[tf_listener-2] [WARN] [1792375551.677525172] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[image_monitor-1] [WARN] [1792375552.473362014] [image_monitor]: 已 3.0s 以上没有收到图像消息，帧率按 0 发布。排查顺序：ros2 topic list -t 看图像话题是否存在 → ros2 topic hz <话题> 看有没有数据 → rqt Node Graph 看 remap 后的连接是否落到别的话题
+[tf_listener-2] [WARN] [1792375553.678318546] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[tf_listener-2] [WARN] [1792375556.179563187] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[image_monitor-1] [WARN] [1792375557.470243541] [image_monitor]: 已 3.0s 以上没有收到图像消息，帧率按 0 发布。排查顺序：ros2 topic list -t 看图像话题是否存在 → ros2 topic hz <话题> 看有没有数据 → rqt Node Graph 看 remap 后的连接是否落到别的话题
+[tf_listener-2] [WARN] [1792375558.683792664] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[tf_listener-2] [WARN] [1792375561.180435468] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[image_monitor-1] [WARN] [1792375562.471425189] [image_monitor]: 已 3.0s 以上没有收到图像消息，帧率按 0 发布。排查顺序：ros2 topic list -t 看图像话题是否存在 → ros2 topic hz <话题> 看有没有数据 → rqt Node Graph 看 remap 后的连接是否落到别的话题
+[tf_listener-2] [WARN] [1792375563.681469195] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[tf_listener-2] [WARN] [1792375565.682025788] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[image_monitor-1] [WARN] [1792375567.469321996] [image_monitor]: 已 3.0s 以上没有收到图像消息，帧率按 0 发布。排查顺序：ros2 topic list -t 看图像话题是否存在 → ros2 topic hz <话题> 看有没有数据 → rqt Node Graph 看 remap 后的连接是否落到别的话题
+[tf_listener-2] [WARN] [1792375568.179044349] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[tf_listener-2] [WARN] [1792375570.183147386] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[image_monitor-1] [WARN] [1792375572.472085504] [image_monitor]: 已 3.0s 以上没有收到图像消息，帧率按 0 发布。排查顺序：ros2 topic list -t 看图像话题是否存在 → ros2 topic hz <话题> 看有没有数据 → rqt Node Graph 看 remap 后的连接是否落到别的话题
+[tf_listener-2] [WARN] [1792375572.681678857] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[tf_listener-2] [WARN] [1792375575.177082015] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[tf_listener-2] [WARN] [1792375577.177822105] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[image_monitor-1] [WARN] [1792375577.470897277] [image_monitor]: 已 3.0s 以上没有收到图像消息，帧率按 0 发布。排查顺序：ros2 topic list -t 看图像话题是否存在 → ros2 topic hz <话题> 看有没有数据 → rqt Node Graph 看 remap 后的连接是否落到别的话题
+[tf_listener-2] [WARN] [1792375579.679357158] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[tf_listener-2] [WARN] [1792375582.175888847] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[image_monitor-1] [WARN] [1792375582.468955077] [image_monitor]: 已 3.0s 以上没有收到图像消息，帧率按 0 发布。排查顺序：ros2 topic list -t 看图像话题是否存在 → ros2 topic hz <话题> 看有没有数据 → rqt Node Graph 看 remap 后的连接是否落到别的话题
+[tf_listener-2] [WARN] [1792375584.179164247] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[tf_listener-2] [WARN] [1792375586.179965571] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[image_monitor-1] [WARN] [1792375587.470937036] [image_monitor]: 已 3.0s 以上没有收到图像消息，帧率按 0 发布。排查顺序：ros2 topic list -t 看图像话题是否存在 → ros2 topic hz <话题> 看有没有数据 → rqt Node Graph 看 remap 后的连接是否落到别的话题
+[tf_listener-2] [WARN] [1792375588.678943530] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[tf_listener-2] [WARN] [1792375591.181902841] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[image_monitor-1] [WARN] [1792375592.470970896] [image_monitor]: 已 3.0s 以上没有收到图像消息，帧率按 0 发布。排查顺序：ros2 topic list -t 看图像话题是否存在 → ros2 topic hz <话题> 看有没有数据 → rqt Node Graph 看 remap 后的连接是否落到别的话题
+[tf_listener-2] [WARN] [1792375593.677137176] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[tf_listener-2] [WARN] [1792375595.683642500] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[image_monitor-1] [WARN] [1792375597.475789717] [image_monitor]: 已 3.0s 以上没有收到图像消息，帧率按 0 发布。排查顺序：ros2 topic list -t 看图像话题是否存在 → ros2 topic hz <话题> 看有没有数据 → rqt Node Graph 看 remap 后的连接是否落到别的话题
+[tf_listener-2] [WARN] [1792375598.182114984] [tf_listener]: tf 查询失败 [LookupException]："moving_target" passed to lookupTransform argument target_frame does not exist. 
+[tf_listener-2]   处理建议：坐标系不存在或尚无数据：moving_target / base_link；用 ros2 run tf2_tools view_frames 看树里有没有该 frame，用 ros2 run tf2_ros tf2_echo 单独确认
+[tf_listener-2] [WARN] [1792375598.674545098] [tf_listener]: tf 查询失败 [ExtrapolationException]：Lookup would require extrapolation at time 0.040000, but only time 0.050000 is in the buffer, when looking up transform from frame [base_link] to frame [moving_target]
+[tf_listener-2]   处理建议：时间戳暂时对不上（刚启动或时间跳变）；通常是启动瞬态，持续出现则检查各广播器是否用同一时间基
+[tf_listener-2] [INFO] [1792375598.971095221] [tf_listener]: 查询恢复正常（此前连续错误 100 次），当前距离 1.235 m
+[image_monitor-1] [WARN] [1792375604.971792122] [image_monitor]: 已 3.0s 以上没有收到图像消息，帧率按 0 发布。排查顺序：ros2 topic list -t 看图像话题是否存在 → ros2 topic hz <话题> 看有没有数据 → rqt Node Graph 看 remap 后的连接是否落到别的话题
+[tf_listener-2] [INFO] [1792375610.970648925] [tf_listener]: moving_target 相对 base_link：x=-0.000 y=+1.200 z=-0.290 → 距离 1.235 m
+[image_monitor-1] [WARN] [1792375612.472412112] [image_monitor]: 已 3.0s 以上没有收到图像消息，帧率按 0 发布。排查顺序：ros2 topic list -t 看图像话题是否存在 → ros2 topic hz <话题> 看有没有数据 → rqt Node Graph 看 remap 后的连接是否落到别的话题
+[image_monitor-1] [WARN] [1792375617.470428223] [image_monitor]: 已 3.0s 以上没有收到图像消息，帧率按 0 发布。排查顺序：ros2 topic list -t 看图像话题是否存在 → ros2 topic hz <话题> 看有没有数据 → rqt Node Graph 看 remap 后的连接是否落到别的话题
+[image_monitor-1] [WARN] [1792375622.480358729] [image_monitor]: 已 3.0s 以上没有收到图像消息，帧率按 0 发布。排查顺序：ros2 topic list -t 看图像话题是否存在 → ros2 topic hz <话题> 看有没有数据 → rqt Node Graph 看 remap 后的连接是否落到别的话题
+[tf_listener-2] [INFO] [1792375623.470730013] [tf_listener]: moving_target 相对 base_link：x=-0.000 y=+1.200 z=-0.290 → 距离 1.234 m
+[image_monitor-1] [INFO] [1792375624.972114292] [image_monitor]: 窗口 5.0s 内 1 帧 → 0.00 fps（累计 5 帧）
+[image_monitor-1] [WARN] [1792375629.971860025] [image_monitor]: 已 3.0s 以上没有收到图像消息，帧率按 0 发布。排查顺序：ros2 topic list -t 看图像话题是否存在 → ros2 topic hz <话题> 看有没有数据 → rqt Node Graph 看 remap 后的连接是否落到别的话题

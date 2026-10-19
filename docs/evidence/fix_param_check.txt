@@ -1,0 +1,25 @@
+=== 参数覆盖检查（期望 window_sec=2.0、target_frame=moving_target_fault）===
+Double value is: 2.0
+String value is: moving_target_fault
+
+=== /tf_listener/distance（期望 NaN）===
+data: .nan
+---
+data: .nan
+---
+data: .nan
+---
+data: .nan
+---
+data: .nan
+---
+data: .nan
+---
+
+=== /image_monitor/fps（期望有正常值，故障只作用于 frame）===
+data: 0.0
+---
+data: 0.0
+---
+data: 0.0
+---

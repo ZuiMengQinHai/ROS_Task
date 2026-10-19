@@ -1,0 +1,8 @@
+### /cmd_vel 类型：geometry_msgs/msg/TwistStamped
+### 运动前 odom→base_footprint 平移
+- Translation: [0.000, 0.000, 0.000]
+- Translation: [0.000, 0.000, 0.000]
+- Translation: [0.000, 0.000, 0.000]
+### 运动后 odom→base_footprint 平移
+- Translation: [0.104, 0.013, 0.000]
+- Translation: [0.119, 0.017, 0.000]

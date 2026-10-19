@@ -1,0 +1,246 @@
+[INFO] [1792375360.730639934] [tf2_echo]: Waiting for transform base_link ->  base_footprint: Invalid frame ID "base_link" passed to canTransform argument target_frame - frame does not exist
+At time 0.0
+- Translation: [0.000, 0.000, -0.010]
+- Rotation: in Quaternion (xyzw) [0.000, 0.000, 0.000, 1.000]
+- Rotation: in RPY (radian) [0.000, -0.000, 0.000]
+- Rotation: in RPY (degree) [0.000, -0.000, 0.000]
+- Matrix:
+  1.000  0.000  0.000  0.000
+  0.000  1.000  0.000  0.000
+  0.000  0.000  1.000 -0.010
+  0.000  0.000  0.000  1.000
+At time 0.0
+- Translation: [0.000, 0.000, -0.010]
+- Rotation: in Quaternion (xyzw) [0.000, 0.000, 0.000, 1.000]
+- Rotation: in RPY (radian) [0.000, -0.000, 0.000]
+- Rotation: in RPY (degree) [0.000, -0.000, 0.000]
+- Matrix:
+  1.000  0.000  0.000  0.000
+  0.000  1.000  0.000  0.000
+  0.000  0.000  1.000 -0.010
+  0.000  0.000  0.000  1.000
+At time 0.0
+- Translation: [0.000, 0.000, -0.010]
+- Rotation: in Quaternion (xyzw) [0.000, 0.000, 0.000, 1.000]
+- Rotation: in RPY (radian) [0.000, -0.000, 0.000]
+- Rotation: in RPY (degree) [0.000, -0.000, 0.000]
+- Matrix:
+  1.000  0.000  0.000  0.000
+  0.000  1.000  0.000  0.000
+  0.000  0.000  1.000 -0.010
+  0.000  0.000  0.000  1.000
+At time 0.0
+- Translation: [0.000, 0.000, -0.010]
+- Rotation: in Quaternion (xyzw) [0.000, 0.000, 0.000, 1.000]
+- Rotation: in RPY (radian) [0.000, -0.000, 0.000]
+- Rotation: in RPY (degree) [0.000, -0.000, 0.000]
+- Matrix:
+  1.000  0.000  0.000  0.000
+  0.000  1.000  0.000  0.000
+  0.000  0.000  1.000 -0.010
+  0.000  0.000  0.000  1.000
+At time 0.0
+- Translation: [0.000, 0.000, -0.010]
+- Rotation: in Quaternion (xyzw) [0.000, 0.000, 0.000, 1.000]
+- Rotation: in RPY (radian) [0.000, -0.000, 0.000]
+- Rotation: in RPY (degree) [0.000, -0.000, 0.000]
+- Matrix:
+  1.000  0.000  0.000  0.000
+  0.000  1.000  0.000  0.000
+  0.000  0.000  1.000 -0.010
+  0.000  0.000  0.000  1.000
+At time 0.0
+- Translation: [0.000, 0.000, -0.010]
+- Rotation: in Quaternion (xyzw) [0.000, 0.000, 0.000, 1.000]
+- Rotation: in RPY (radian) [0.000, -0.000, 0.000]
+- Rotation: in RPY (degree) [0.000, -0.000, 0.000]
+- Matrix:
+  1.000  0.000  0.000  0.000
+  0.000  1.000  0.000  0.000
+  0.000  0.000  1.000 -0.010
+  0.000  0.000  0.000  1.000
+At time 0.0
+- Translation: [0.000, 0.000, -0.010]
+- Rotation: in Quaternion (xyzw) [0.000, 0.000, 0.000, 1.000]
+- Rotation: in RPY (radian) [0.000, -0.000, 0.000]
+- Rotation: in RPY (degree) [0.000, -0.000, 0.000]
+- Matrix:
+  1.000  0.000  0.000  0.000
+  0.000  1.000  0.000  0.000
+  0.000  0.000  1.000 -0.010
+  0.000  0.000  0.000  1.000
+[INFO] [1792375367.929586602] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [1792375368.713878875] [tf2_echo]: Waiting for transform base_link ->  moving_target: Invalid frame ID "base_link" passed to canTransform argument target_frame - frame does not exist
+[INFO] [1792375370.651349368] [tf2_echo]: Waiting for transform base_link ->  moving_target: Invalid frame ID "moving_target" passed to canTransform argument source_frame - frame does not exist
+[INFO] [1792375371.651376834] [tf2_echo]: Waiting for transform base_link ->  moving_target: Invalid frame ID "moving_target" passed to canTransform argument source_frame - frame does not exist
+At time 0.100000000
+- Translation: [1.196, 0.094, 0.290]
+- Rotation: in Quaternion (xyzw) [0.000, 0.000, 0.734, 0.679]
+- Rotation: in RPY (radian) [0.000, -0.000, 1.649]
+- Rotation: in RPY (degree) [0.000, -0.000, 94.500]
+- Matrix:
+ -0.078 -0.997  0.000  1.196
+  0.997 -0.078  0.000  0.094
+  0.000  0.000  1.000  0.290
+  0.000  0.000  0.000  1.000
+At time 0.150000000
+- Translation: [1.192, 0.141, 0.290]
+- Rotation: in Quaternion (xyzw) [0.000, 0.000, 0.748, 0.664]
+- Rotation: in RPY (radian) [0.000, -0.000, 1.689]
+- Rotation: in RPY (degree) [0.000, -0.000, 96.750]
+- Matrix:
+ -0.118 -0.993  0.000  1.192
+  0.993 -0.118  0.000  0.141
+  0.000  0.000  1.000  0.290
+  0.000  0.000  0.000  1.000
+At time 0.300000000
+- Translation: [1.167, 0.280, 0.290]
+- Rotation: in Quaternion (xyzw) [0.000, 0.000, 0.785, 0.619]
+- Rotation: in RPY (radian) [0.000, -0.000, 1.806]
+- Rotation: in RPY (degree) [0.000, -0.000, 103.500]
+- Matrix:
+ -0.233 -0.972  0.000  1.167
+  0.972 -0.233  0.000  0.280
+  0.000  0.000  1.000  0.290
+  0.000  0.000  0.000  1.000
+At time 0.400000000
+- Translation: [1.141, 0.371, 0.290]
+- Rotation: in Quaternion (xyzw) [0.000, 0.000, 0.809, 0.588]
+- Rotation: in RPY (radian) [0.000, -0.000, 1.885]
+- Rotation: in RPY (degree) [0.000, -0.000, 108.000]
+- Matrix:
+ -0.309 -0.951  0.000  1.141
+  0.951 -0.309  0.000  0.371
+  0.000  0.000  1.000  0.290
+  0.000  0.000  0.000  1.000
+[INFO] [1792375375.939927571] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+transforms:
+- header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: /base_footprint
+  child_frame_id: /base_link
+  transform:
+    translation:
+      x: 0.0
+      y: 0.0
+      z: 0.01
+    rotation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+- header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: /base_link
+  child_frame_id: /camera_link
+  transform:
+    translation:
+      x: 0.073
+      y: -0.011
+      z: 0.084
+    rotation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+- header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: /camera_link
+  child_frame_id: /camera_rgb_frame
+  transform:
+    translation:
+      x: 0.003
+      y: 0.011
+      z: 0.009
+    rotation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+- header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: /camera_rgb_frame
+  child_frame_id: /camera_rgb_optical_frame
+  transform:
+    translation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+    rotation:
+      x: -0.49999984146591747
+      y: 0.49960183664463353
+      z: -0.49999984146591747
+      w: 0.5003981633553666
+- header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: /base_link
+  child_frame_id: /caster_back_left_link
+  transform:
+    translation:
+      x: -0.177
+      y: 0.064
+      z: -0.004
+    rotation:
+      x: -0.706825181105366
+      y: 0.0
+      z: 0.0
+      w: 0.7073882691671998
+- header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: /base_link
+  child_frame_id: /caster_back_right_link
+  transform:
+    translation:
+      x: -0.177
+      y: -0.064
+      z: -0.004
+    rotation:
+      x: -0.706825181105366
+      y: 0.0
+      z: 0.0
+      w: 0.7073882691671998
+- header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: /base_link
+  child_frame_id: /imu_link
+  transform:
+    translation:
+      x: 0.0
+      y: 0.0
+      z: 0.068
+    rotation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+- header:
+    stamp:
+      sec: 0
+      nanosec: 0
+    frame_id: /base_link
+  child_frame_id: /base_scan
+  transform:
+    translation:
+      x: -0.064
+      y: 0.0
+      z: 0.122
+    rotation:
+      x: 0.0
+      y: 0.0
+      z: 0.0
+      w: 1.0
+---

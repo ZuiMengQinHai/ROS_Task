@@ -1,0 +1,22 @@
+### ros2 topic hz /camera/image_raw（12s）
+	min: 0.537s max: 1.366s std dev: 0.30276s window: 4
+average rate: 0.767
+	min: 0.537s max: 3.012s std dev: 0.89595s window: 5
+### ros2 topic hz /odom（12s）
+	min: 0.047s max: 0.497s std dev: 0.11005s window: 31
+average rate: 4.465
+	min: 0.047s max: 0.511s std dev: 0.11944s window: 36
+### ros2 topic hz /scan（12s）
+	min: 1.016s max: 1.158s std dev: 0.05009s window: 5
+average rate: 0.930
+	min: 1.016s max: 1.158s std dev: 0.04612s window: 6
+### ros2 topic hz /tf（12s）
+	min: 0.001s max: 0.723s std dev: 0.16024s window: 48
+average rate: 7.041
+	min: 0.001s max: 0.723s std dev: 0.15562s window: 57
+### ros2 topic hz /image_monitor/fps（12s）
+WARNING: topic [/image_monitor/fps] does not appear to be published yet
+### ros2 topic hz /tf_listener/distance（12s）
+WARNING: topic [/tf_listener/distance] does not appear to be published yet
+average rate: 0.449
+	min: 2.204s max: 2.254s std dev: 0.02504s window: 2

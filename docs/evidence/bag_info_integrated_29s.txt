@@ -1,0 +1,17 @@
+
+Files:             integrated_0.mcap
+Bag size:          52.1 MiB
+Storage id:        mcap
+ROS Distro:        jazzy
+Duration:          29.105248806s
+Start:             Oct 19 2026 08:37:26.077003729 (1792370246.077003729)
+End:               Oct 19 2026 08:37:55.182252535 (1792370275.182252535)
+Messages:          2289
+Topic information: Topic: /camera/image_raw | Type: sensor_msgs/msg/Image | Count: 59 | Serialization Format: cdr
+                   Topic: /clock | Type: rosgraph_msgs/msg/Clock | Count: 1956 | Serialization Format: cdr
+                   Topic: /odom | Type: nav_msgs/msg/Odometry | Count: 97 | Serialization Format: cdr
+                   Topic: /tf | Type: tf2_msgs/msg/TFMessage | Count: 175 | Serialization Format: cdr
+                   Topic: /tf_static | Type: tf2_msgs/msg/TFMessage | Count: 2 | Serialization Format: cdr
+Service:           0
+Service information: 
+53M	/home/ubuntu/task1_ws/bags/integrated
