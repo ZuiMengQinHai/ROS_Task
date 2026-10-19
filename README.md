@@ -114,7 +114,7 @@ ros2 launch tb3_tools bringup.launch.py mode:=offline fault_mode:=frame
 | `topic` | 监测节点重映射到 `/camera/image_missing`（无人发布） | 帧率恒 0；该话题只有订阅者没有发布者；日志反复告警；**RViz 图像仍正常** |
 | `frame` | 监听节点 `target_frame:=moving_target_fault`（树里没有） | 距离发布 NaN、曲线断开；日志报 `LookupException`；`view_frames` 无此 frame |
 
-修复 = 把 `fault_mode` 改回 `none`（不动 ROBOTICS 原始模型文件）。
+修复 = 把 `fault_mode` 改回 `none`（不动 ROBOTIS 原始模型文件）。
 
 ## 五、数据包
 
@@ -211,3 +211,21 @@ ros2 launch tb3_tools bringup.launch.py mode:=offline fault_mode:=frame
 
 见 [`AI_协作记录.md`](AI_协作记录.md)：记录了实现阶段真正影响实现的几次交互
 （Launch 参数优先级、rosbag 录制顺序、tf 异常处理与 NaN 语义、rqt_graph 空白排查）。
+
+## 十、提交记录
+
+```
+*   983a5d9 合并挑战版：故障注入与修复历史
+|\
+| * 7394dd6 挑战版：bringup.launch.py 故障模式（话题/坐标）与离线回放入口，附故障分析报告与证据
+|/
+* 658666d 进阶版：操作手册、进阶版说明、README 与证据（坐标系树 / RViz / rqt / bag info）
+* feb06d9 进阶版：修正 Launch 参数覆盖（window_sec / target_frame 现在真正生效）
+* 127b850 进阶版：实现图像帧率监测、静态/动态 tf 广播与 tf 监听节点，新增 integrated.launch.py
+* a105c45 基础版：实现 basic.launch.py 与 basic.rviz，补充操作手册
+* 3d8b11b 订正 README 与准备工作记录中的仓库信息
+* cdb4e9c 初始化 tb3_tools 功能包骨架与工程结构
+```
+
+分支：`challenge/fault-injection`（故障注入与修复），已用 `--no-ff` 合并回 `main`。
+远端推送需要凭据，本机暂未执行 `git push`（命令见 `docs/操作手册_进阶与挑战.md` 第 7、12 节）。
