@@ -1,4 +1,4 @@
-# tb3_tools —— TurtleBot3 仿真小车工具链（第 3 章三级项目）
+﻿# tb3_tools —— TurtleBot3 仿真小车工具链（第 3 章三级项目）
 
 > 状态：**基础版、进阶版、挑战版已完成**。
 > 代码在 `src/tb3_tools/`，运行与观察步骤见
@@ -190,17 +190,17 @@ ros2 launch tb3_tools bringup.launch.py mode:=offline fault_mode:=frame
 
 | 文件 | 说明 |
 | --- | --- |
-| `frames_tree_online_sim.png|pdf` | 在线仿真的坐标系树（含 `inspection_point`、`moving_target`） |
+| `frames_tree_online_sim.jpg|pdf` | 在线仿真的坐标系树（含 `inspection_point`、`moving_target`） |
 | `frames_tree_offline_normal.*`、`frames_tree_topic_fault.*`、`frames_tree_frame_fault.*` | 离线三种配置下的坐标系树（对照「树里有没有那个 frame」） |
 | `tf2_echo_*.txt` | 静态/动态关系的 `tf2_echo` 原始输出（含时间戳口径） |
 | `offline_normal_evidence.txt`、`offline_topic_fault_evidence.txt`、`offline_frame_fault_evidence.txt` | 三种配置的节点/话题/参数/数值采样（含 `10.10`、`0.0`、`.nan` 对照） |
 | `offline_*_node_logs.txt` | 两个自编节点在三种配置下的原始日志（告警原文） |
 | `fix_param_check.txt` | 参数覆盖修正后的验证：`window_sec=2.0`、`target_frame=moving_target_fault`、距离 `.nan` |
-| `shots/online_rviz_tf_laser_image.png` | 在线 RViz：TF + LaserScan + Image 同屏 |
-| `shots/online_rqt_image_view.png` | rqt Image View 显示 `/camera/image_raw` |
-| `shots/offline_rqt_plot_two_topics.png` | rqt Plot：`/image_monitor/fps/data` 与 `/tf_listener/distance/data` 两条曲线 |
-| `shots/offline_rqt_graph.png` | rqt Node Graph（回放中的节点连接） |
-| `shots/offline_normal_rviz.png`、`topic_fault_rviz.png`、`frame_fault_rviz.png` | 离线三种配置的 RViz 截图 |
+| `shots/online_rviz_tf_laser_image.jpg` | 在线 RViz：TF + LaserScan + Image 同屏 |
+| `shots/online_rqt_image_view.jpg` | rqt Image View 显示 `/camera/image_raw` |
+| `shots/offline_rqt_plot_two_topics.jpg` | rqt Plot：`/image_monitor/fps/data` 与 `/tf_listener/distance/data` 两条曲线 |
+| `shots/offline_rqt_graph.jpg` | rqt Node Graph（回放中的节点连接） |
+| `shots/offline_normal_rviz.jpg`、`topic_fault_rviz.jpg`、`frame_fault_rviz.jpg` | 离线三种配置的 RViz 截图 |
 | `bag_info_final.txt`、`verify_bag_tf.txt` | 数据包时长/计数；以及「这份包回放时 `base_link` 能否查到」的校验 |
 | `topic_list_t_online.txt`、`topic_hz_online.txt`、`image_topic_info_verbose_online.txt` | 在线仿真的环境实测数据（话题清单、频率、QoS） |
 
