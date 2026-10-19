@@ -1,21 +1,32 @@
-# tb3_tools 参数（骨架：参数名先定下来，具体实现在节点里读取）
-# 用法示例：ros2 launch tb3_tools integrated.launch.py window_sec:=3.0
+# tb3_tools 参数默认值（进阶版 / 挑战版）
+#
+# 用法示例：
+#   ros2 launch tb3_tools integrated.launch.py window_sec:=2.0
+#   ros2 launch tb3_tools bringup.launch.py fault_mode:=topic
+#
+# 说明：本文件只提供「默认值」；Launch 参数（window_sec / target_frame 等）
+# 会在 Launch 里以更高优先级覆盖同名参数，改参数不必改这个文件。
+# 节点名必须与 Launch 中 `name=` 一致，否则这段参数不会生效。
 
 /**:
   ros__parameters:
+    # 仿真与 bag 回放都用仿真时间
     use_sim_time: true
 
 image_monitor:
   ros__parameters:
-    # 帧率统计窗口长度（进阶版要求：可由 Launch 参数覆盖）
+    # 帧率统计窗口长度（秒）——进阶版要求可由 Launch 参数覆盖
     window_sec: 5.0
-    # 数值话题的发布周期
+    # 数值话题发布周期（秒）
     publish_period_sec: 1.0
-    # 供 rqt Plot 绘图的输出话题名
-    fps_topic: /image_monitor/fps
+    # 供 rqt Plot 绘图的输出话题：私有名 "~/fps" → /image_monitor/fps
+    fps_topic: "~/fps"
+    # 超过这么久没收到图像就打一条告警（定位话题故障用）
+    stale_warn_sec: 3.0
 
 static_tf_broadcaster:
   ros__parameters:
+    # 静态：机械上固定不变，走 /tf_static（transient_local），只需发一次
     parent_frame: base_link
     child_frame: inspection_point
     x: 0.15
@@ -27,17 +38,24 @@ static_tf_broadcaster:
 
 dynamic_tf_broadcaster:
   ros__parameters:
+    # 动态：随仿真时间变化，必须按频率持续广播
     parent_frame: odom
     child_frame: moving_target
     # 目标绕 odom 原点做圆周运动的周期与半径
     period_sec: 8.0
     radius_m: 1.2
     z_m: 0.3
+    # 广播频率（Hz）
+    publish_rate_hz: 20.0
 
 tf_listener:
   ros__parameters:
+    # 查询 base_link → moving_target 的距离
     source_frame: base_link
     target_frame: moving_target
-    # lookup_transform 的超时；超时/坐标系缺失时要走异常分支
+    lookup_period_sec: 0.2
+    # lookup_transform 的超时；超时/坐标系缺失时走异常分支
     timeout_sec: 0.2
+    # 同一类错误多久之内不重复刷屏（秒）
+    error_warn_sec: 2.0
     distance_topic: /tf_listener/distance

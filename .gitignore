@@ -19,3 +19,6 @@ metadata.yaml
 .vscode/
 .idea/
 *.log
+
+# 本机与虚拟机之间的临时脚本、截图（不属于交付物）
+.vm/
