@@ -15,8 +15,10 @@
 
 image_monitor:
   ros__parameters:
-    # 帧率统计窗口长度（秒）——进阶版要求可由 Launch 参数覆盖
-    window_sec: 5.0
+    # 帧率统计窗口长度（秒）**不在这里写**：
+    # 它由 Launch 参数 window_sec 控制（integrated.launch.py / bringup.launch.py），
+    # 节点代码里的默认值是 5.0。原因见 integrated.launch.py 里的注释：
+    # 这里若写同名键，会以「按节点名」的更高优先级压掉 Launch 的覆盖值。
     # 数值话题发布周期（秒）
     publish_period_sec: 1.0
     # 供 rqt Plot 绘图的输出话题：私有名 "~/fps" → /image_monitor/fps
@@ -52,7 +54,8 @@ tf_listener:
   ros__parameters:
     # 查询 base_link → moving_target 的距离
     source_frame: base_link
-    target_frame: moving_target
+    # 目标 frame 同理**不在这里写**：由 Launch 参数 target_frame 控制
+    # （挑战版的坐标故障就是把这里换成 moving_target_fault），代码默认值 moving_target。
     lookup_period_sec: 0.2
     # lookup_transform 的超时；超时/坐标系缺失时走异常分支
     timeout_sec: 0.2

@@ -85,15 +85,15 @@ def launch_setup(context, *args, **kwargs):
 
     # --- 2. 图像监测节点（参数 + 重映射）-----------------------------------
     # 节点源码订阅相对话题名 image；这里 remap 成 image_topic；
-    # Launch 参数 window_sec 用命令行 -p 覆盖 params.yaml 的默认统计窗口。
+    # Launch 参数 window_sec 通过 parameters 字典覆盖节点默认值。
     actions.append(Node(
         package='tb3_tools',
         executable='image_monitor',
         name='image_monitor',
-        parameters=[params_file],
-        arguments=['--ros-args',
-                   '-p', f'use_sim_time:={str(use_sim_time).lower()}',
-                   '-p', f'window_sec:={window_sec}'],
+        parameters=[params_file, {
+            'use_sim_time': use_sim_time,
+            'window_sec': window_sec,
+        }],
         remappings=[('image', image_topic)],
         output='screen',
     ))
@@ -101,25 +101,26 @@ def launch_setup(context, *args, **kwargs):
     # --- 3. 自编 tf：静态广播（base_link → inspection_point）---------------
     # 回放时必须关掉（enable_tf:=false），否则会和 bag 里的 /tf 打架
     #
-    # 注意（实测踩坑）：Node(parameters=[yaml 路径, {字典}]) 里的字典会被 launch_ros
-    # 写成「通配符段落 /**」的临时参数文件，优先级低于 params.yaml 中按节点名
-    # 写的那一段，因此覆盖不掉同名参数（现象是 window_sec 一直是 5.0）。
-    # 这里统一改用命令行 -p：它优先级最高，覆盖参数文件里的值。
+    # 关于参数覆盖（实测踩坑）：Node(parameters=[yaml 路径, {字典}]) 里的字典会被
+    # launch_ros 写成「通配符段落 /**」的临时参数文件；如果 params.yaml 里还有
+    # 同名参数写在「按节点名」的段落（image_monitor: / tf_listener:）下，
+    # 按节点名的优先级更高，覆盖就不生效（现象：window_sec 一直是 5.0、
+    # target_frame 注入不进去）。因此本工程把 window_sec 与 target_frame
+    # 从 params.yaml 的节点段落里**删掉**，只留在节点代码默认值 + Launch 里，
+    # 这样通配符段落就是唯一来源，覆盖必然生效。
     if enable_tf:
         actions.append(Node(
             package='tb3_tools',
             executable='static_tf_broadcaster',
             name='static_tf_broadcaster',
-            parameters=[params_file],
-            arguments=['--ros-args', '-p', f'use_sim_time:={str(use_sim_time).lower()}'],
+            parameters=[params_file, {'use_sim_time': use_sim_time}],
             output='screen',
         ))
         actions.append(Node(
             package='tb3_tools',
             executable='dynamic_tf_broadcaster',
             name='dynamic_tf_broadcaster',
-            parameters=[params_file],
-            arguments=['--ros-args', '-p', f'use_sim_time:={str(use_sim_time).lower()}'],
+            parameters=[params_file, {'use_sim_time': use_sim_time}],
             output='screen',
         ))
 
@@ -128,10 +129,10 @@ def launch_setup(context, *args, **kwargs):
         package='tb3_tools',
         executable='tf_listener',
         name='tf_listener',
-        parameters=[params_file],
-        arguments=['--ros-args',
-                   '-p', f'use_sim_time:={str(use_sim_time).lower()}',
-                   '-p', f'target_frame:={target_frame}'],
+        parameters=[params_file, {
+            'use_sim_time': use_sim_time,
+            'target_frame': target_frame,
+        }],
         output='screen',
     ))
 
